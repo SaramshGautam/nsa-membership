@@ -82,13 +82,17 @@ document
       return;
     }
 
-    const response = await fetch("http://127.0.0.1:5050/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, category }),
-    });
+    // const response = await fetch("http://127.0.0.1:5050/submit", {
+    const response = await fetch(
+      "https://nsa-membership-api.vercel.app/submit",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, category }),
+      }
+    );
 
     const data = await response.json();
 
