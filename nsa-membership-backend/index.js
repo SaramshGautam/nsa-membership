@@ -58,5 +58,7 @@ app.post("/submit", async (req, res) => {
 });
 
 app.listen(5050, () => {
-  console.log("Server is running on http://127.0.0.1:5050");
+  console.log(
+    "Server is running on https://nsa-membership-api.vercel.app:5050"
+  );
 });
