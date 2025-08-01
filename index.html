@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSA Membership Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>NSA Membership Registration</h1>
+      <form id="membershipForm">
+        <label for="category">Membership Category</label>
+        <select id="category" required onchange="updatePrice()">
+          <option value="">-- Select a category --</option>
+          <option value="Student (Single)">👤 Student (Single) - $25</option>
+          <option value="Student Couple">👥 Student Couple - $40</option>
+          <option value="Working (Single)">💼 Working (Single) - $40</option>
+          <option value="Working Couple">💑 Working Couple - $60</option>
+          <option value="Family Membership">👨‍👩‍👧 Family Membership - $75</option>
+        </select>
+
+        <div id="memberInputs"></div>
+
+        <div id="priceDisplay">Membership Fee: $0</div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Firebase Admin SDK service account key
+*.json
+!firebase.json  # allow firebase.json config
+
+# OS system files
+.DS_Store
+Thumbs.db
+
+# Build files (optional)
+dist/
+build/
+
+# VS Code settings (optional)
+.vscode/
+
+# Frontend compiled files
+*.cache
+
+nsa-membership-backend/nsa-membership-9eba9-firebase-adminsdk-fbsvc-30c21a7a04.json
